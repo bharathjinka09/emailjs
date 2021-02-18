@@ -1,26 +1,45 @@
-<form id="form">
-  <div class="field">
-    <label for="to_name">to_name</label>
-    <input type="text" name="to_name" id="to_name" required>
-  </div>
-  <div class="field">
-    <label for="from_name">from_name</label>
-    <input type="text" name="from_name" id="from_name" required>
-  </div>
-  <div class="field">
-    <label for="message">message</label>
-    <input type="text" name="message" id="message" required>
-  </div>
-  <div class="field">
-    <label for="reply_to">reply_to</label>
-    <input type="text" name="reply_to" id="reply_to" required>
-  </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email JS Send emails easily</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+      body{
+        background: aliceblue;
+      }
+    </style>
+</head>
+<body class="container">
+    
+  <h1 style="text-align: center;">Email JS Send emails easily</h1>
 
-  <input type="submit" id="button" value="Send Email">
-</form>
+  <form id="form">
+    <div class="field">
+      <label for="to_name">To Name</label>
+      <input class="form-control" type="text" name="to_name" id="to_name" required>
+    </div>
+    <div class="field">
+      <label for="from_name">From Name</label>
+      <input class="form-control" type="text" name="from_name" id="from_name" required>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <input class="form-control" type="text" name="message" id="message" required>
+    </div>
+    <div class="field">
+      <label for="reply_to">Reply to</label>
+      <input class="form-control" type="text" name="reply_to" id="reply_to" required>
+    </div>
+<br>
+    <input class="btn btn-primary" type="submit" id="button" value="Send Email">
+  </form>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
-<script type="text/javascript">
-  emailjs.init('user_1J9lK3QggxonWQXgni1Wr')
-</script>
+  <script type="text/javascript">
+    emailjs.init('user_1J9lK3QggxonWQXgni1Wr')
+  </script>
+</body>
+
+</html>
