@@ -19,21 +19,27 @@
       <label for="to_name">To Name</label>
       <input class="form-control" type="text" name="to_name" id="to_name" required>
     </div>
+    <br>
     <div class="field">
       <label for="from_name">From Name</label>
       <input class="form-control" type="text" name="from_name" id="from_name" required>
     </div>
+    <br>
+    <div class="field">
+      <label for="reply_to">Reply to (email)</label>
+      <input class="form-control" type="email" name="reply_to" id="reply_to" required>
+    </div>
+    <br>
     <div class="field">
       <label for="message">Message</label>
-      <input class="form-control" type="text" name="message" id="message" required>
-    </div>
-    <div class="field">
-      <label for="reply_to">Reply to</label>
-      <input class="form-control" type="text" name="reply_to" id="reply_to" required>
+      <textarea rows="10" cols="10" class="form-control" type="text" name="message" id="message" required></textarea>
     </div>
 <br>
     <input class="btn btn-primary" type="submit" id="button" value="Send Email">
+
   </form>
+    <br>
+    <br>
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
